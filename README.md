@@ -1,7 +1,7 @@
 # Arsenal
 
 ## 什么是Arsenal？
-Arsenal 是一个插件式开发设计模式，该设计模式用于消除多重继承带来的高耦合性。
+Arsenal 是一个插件式开发设计模式，该设计模式用于消除多层继承带来的高耦合性。
 
 ## 简介
 该模式由两个角色构成：一个是soldier（插件插入对象），一个是weapon（插件）。在理想状态下，一个soldier可以任意的选用任意的weapon来完成工作，weapon和weapon之间可以互相组装，生成新的weapon。
