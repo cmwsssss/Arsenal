@@ -35,7 +35,7 @@ Swift原生就可以通过extension来实现该解耦方案，但是差异:
 
 ### 使用教程：
 #### 1.创建Weapon
-Weapon是一个协议和类的集合体，所以我们的加入我们要创建一个Pistol的Weapon，可以这样做：
+Weapon是一个协议和类的集合体，所以如果要创建一个Pistol的Weapon，可以这样做：
 
 #### Pistol.h
 ```
