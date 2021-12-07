@@ -29,8 +29,8 @@ Weapon是一个协议和类的复合体，协议部分声明了可以被Soldier�
 这是一个依靠Arsenal实现的架构，由图可见，各个Weapon之间没有相互的耦合关系，与Soldier之间也没有过多的耦合关系，代码重用性也大大提高，Soldier可以立刻替换成任意OC对象。Weapon的数量也可以任意的增加或减少
 
 ### 与Swift的extension的差异
-Swift原生就可以通过extension来实现该解耦方案，但是差异:
-1. 在于Arsenal的粒度可以达到对象级别，而swift则是类级别，而且Arsenal的操控更加自由，可以在任何时候对任何对象进行weapon的装载和卸除
+Swift原生就可以通过extension来实现该解耦方案，但是差异在于:
+1. Arsenal的粒度可以达到对象级别，而swift则是类级别，而且Arsenal的操控更加自由，可以在任何时候对任何对象进行weapon的装载和卸除
 2. Arsenal支持property，而extension没办法支持property
 
 ### 环境要求
