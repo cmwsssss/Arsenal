@@ -33,6 +33,12 @@ Swift原生就可以通过extension来实现该解耦方案，但是差异:
 1. 在于Arsenal的粒度可以达到对象级别，而swift则是类级别，而且Arsenal的操控更加自由，可以在任何时候对任何对象进行weapon的装载和卸除
 2. Arsenal支持property，而extension没办法支持property
 
+### 环境要求
+Arsenal支持 iOS 6 以上
+
+### 安装方法
+pod 'Arsenal-OBJC'
+
 ### 使用教程：
 #### 1.创建Weapon
 Weapon是一个协议和类的集合体，所以如果要创建一个Pistol的Weapon，可以这样做：
