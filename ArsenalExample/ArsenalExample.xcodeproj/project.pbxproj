@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1FB41884D9957A3942CB226 /* Pods_ArsenalExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C604DB4BA376922C06C7C3D /* Pods_ArsenalExample.framework */; };
+		DBB6408F275DF7DF00442F68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6408E275DF7DF00442F68 /* AppDelegate.m */; };
+		DBB64092275DF7DF00442F68 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB64091275DF7DF00442F68 /* SceneDelegate.m */; };
+		DBB64095275DF7DF00442F68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB64094275DF7DF00442F68 /* ViewController.m */; };
+		DBB64098275DF7DF00442F68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB64096275DF7DF00442F68 /* Main.storyboard */; };
+		DBB6409A275DF7E000442F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB64099275DF7E000442F68 /* Assets.xcassets */; };
+		DBB6409D275DF7E000442F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB6409B275DF7E000442F68 /* LaunchScreen.storyboard */; };
+		DBB640A0275DF7E000442F68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6409F275DF7E000442F68 /* main.m */; };
+		DBB640AA275DF7E100442F68 /* ArsenalExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB640A9275DF7E100442F68 /* ArsenalExampleTests.m */; };
+		DBB640B4275DF7E100442F68 /* ArsenalExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB640B3275DF7E100442F68 /* ArsenalExampleUITests.m */; };
+		DBB640B6275DF7E100442F68 /* ArsenalExampleUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB640B5275DF7E100442F68 /* ArsenalExampleUITestsLaunchTests.m */; };
+		DBB640C6275F2B0C00442F68 /* Rifle.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB640C5275F2B0B00442F68 /* Rifle.m */; };
+		DBB640C9275F2C6600442F68 /* SMG.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB640C8275F2C6600442F68 /* SMG.m */; };
+		DBB640CC275F2D3600442F68 /* DynamicDamageWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB640CB275F2D3600442F68 /* DynamicDamageWeapon.m */; };
+		DBB640CF275F2E0C00442F68 /* WeaponsPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB640CE275F2E0C00442F68 /* WeaponsPackage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBB640A6275DF7E100442F68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB64082275DF7DF00442F68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB64089275DF7DF00442F68;
+			remoteInfo = ArsenalExample;
+		};
+		DBB640B0275DF7E100442F68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB64082275DF7DF00442F68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB64089275DF7DF00442F68;
+			remoteInfo = ArsenalExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C604DB4BA376922C06C7C3D /* Pods_ArsenalExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArsenalExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCBC6A3504E2919DBF930C8 /* Pods-ArsenalExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArsenalExample.release.xcconfig"; path = "Target Support Files/Pods-ArsenalExample/Pods-ArsenalExample.release.xcconfig"; sourceTree = "<group>"; };
+		846215581E3CE97E8ADB6E89 /* Pods-ArsenalExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArsenalExample.debug.xcconfig"; path = "Target Support Files/Pods-ArsenalExample/Pods-ArsenalExample.debug.xcconfig"; sourceTree = "<group>"; };
+		DBB6408A275DF7DF00442F68 /* ArsenalExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArsenalExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB6408D275DF7DF00442F68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBB6408E275DF7DF00442F68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DBB64090275DF7DF00442F68 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DBB64091275DF7DF00442F68 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DBB64093275DF7DF00442F68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DBB64094275DF7DF00442F68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DBB64097275DF7DF00442F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBB64099275DF7E000442F68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBB6409C275DF7E000442F68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBB6409E275DF7E000442F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB6409F275DF7E000442F68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBB640A5275DF7E100442F68 /* ArsenalExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArsenalExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB640A9275DF7E100442F68 /* ArsenalExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArsenalExampleTests.m; sourceTree = "<group>"; };
+		DBB640AF275DF7E100442F68 /* ArsenalExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArsenalExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB640B3275DF7E100442F68 /* ArsenalExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArsenalExampleUITests.m; sourceTree = "<group>"; };
+		DBB640B5275DF7E100442F68 /* ArsenalExampleUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArsenalExampleUITestsLaunchTests.m; sourceTree = "<group>"; };
+		DBB640C4275F2B0B00442F68 /* Rifle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rifle.h; sourceTree = "<group>"; };
+		DBB640C5275F2B0B00442F68 /* Rifle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rifle.m; sourceTree = "<group>"; };
+		DBB640C7275F2C6600442F68 /* SMG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMG.h; sourceTree = "<group>"; };
+		DBB640C8275F2C6600442F68 /* SMG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMG.m; sourceTree = "<group>"; };
+		DBB640CA275F2D3600442F68 /* DynamicDamageWeapon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicDamageWeapon.h; sourceTree = "<group>"; };
+		DBB640CB275F2D3600442F68 /* DynamicDamageWeapon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicDamageWeapon.m; sourceTree = "<group>"; };
+		DBB640CD275F2E0C00442F68 /* WeaponsPackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeaponsPackage.h; sourceTree = "<group>"; };
+		DBB640CE275F2E0C00442F68 /* WeaponsPackage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeaponsPackage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBB64087275DF7DF00442F68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1FB41884D9957A3942CB226 /* Pods_ArsenalExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB640A2275DF7E100442F68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB640AC275DF7E100442F68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B56C6EE603E4C6CFCC70E98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				846215581E3CE97E8ADB6E89 /* Pods-ArsenalExample.debug.xcconfig */,
+				3FCBC6A3504E2919DBF930C8 /* Pods-ArsenalExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F1E4F4E389CD56CB929A440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C604DB4BA376922C06C7C3D /* Pods_ArsenalExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBB64081275DF7DF00442F68 = {
+			isa = PBXGroup;
+			children = (
+				DBB6408C275DF7DF00442F68 /* ArsenalExample */,
+				DBB640A8275DF7E100442F68 /* ArsenalExampleTests */,
+				DBB640B2275DF7E100442F68 /* ArsenalExampleUITests */,
+				DBB6408B275DF7DF00442F68 /* Products */,
+				0B56C6EE603E4C6CFCC70E98 /* Pods */,
+				8F1E4F4E389CD56CB929A440 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBB6408B275DF7DF00442F68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6408A275DF7DF00442F68 /* ArsenalExample.app */,
+				DBB640A5275DF7E100442F68 /* ArsenalExampleTests.xctest */,
+				DBB640AF275DF7E100442F68 /* ArsenalExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBB6408C275DF7DF00442F68 /* ArsenalExample */ = {
+			isa = PBXGroup;
+			children = (
+				DBB640C3275DFB3700442F68 /* Weapon */,
+				DBB6408D275DF7DF00442F68 /* AppDelegate.h */,
+				DBB6408E275DF7DF00442F68 /* AppDelegate.m */,
+				DBB64090275DF7DF00442F68 /* SceneDelegate.h */,
+				DBB64091275DF7DF00442F68 /* SceneDelegate.m */,
+				DBB64093275DF7DF00442F68 /* ViewController.h */,
+				DBB64094275DF7DF00442F68 /* ViewController.m */,
+				DBB64096275DF7DF00442F68 /* Main.storyboard */,
+				DBB64099275DF7E000442F68 /* Assets.xcassets */,
+				DBB6409B275DF7E000442F68 /* LaunchScreen.storyboard */,
+				DBB6409E275DF7E000442F68 /* Info.plist */,
+				DBB6409F275DF7E000442F68 /* main.m */,
+			);
+			path = ArsenalExample;
+			sourceTree = "<group>";
+		};
+		DBB640A8275DF7E100442F68 /* ArsenalExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB640A9275DF7E100442F68 /* ArsenalExampleTests.m */,
+			);
+			path = ArsenalExampleTests;
+			sourceTree = "<group>";
+		};
+		DBB640B2275DF7E100442F68 /* ArsenalExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB640B3275DF7E100442F68 /* ArsenalExampleUITests.m */,
+				DBB640B5275DF7E100442F68 /* ArsenalExampleUITestsLaunchTests.m */,
+			);
+			path = ArsenalExampleUITests;
+			sourceTree = "<group>";
+		};
+		DBB640C3275DFB3700442F68 /* Weapon */ = {
+			isa = PBXGroup;
+			children = (
+				DBB640C4275F2B0B00442F68 /* Rifle.h */,
+				DBB640C5275F2B0B00442F68 /* Rifle.m */,
+				DBB640C7275F2C6600442F68 /* SMG.h */,
+				DBB640C8275F2C6600442F68 /* SMG.m */,
+				DBB640CA275F2D3600442F68 /* DynamicDamageWeapon.h */,
+				DBB640CB275F2D3600442F68 /* DynamicDamageWeapon.m */,
+				DBB640CD275F2E0C00442F68 /* WeaponsPackage.h */,
+				DBB640CE275F2E0C00442F68 /* WeaponsPackage.m */,
+			);
+			path = Weapon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBB64089275DF7DF00442F68 /* ArsenalExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB640B9275DF7E100442F68 /* Build configuration list for PBXNativeTarget "ArsenalExample" */;
+			buildPhases = (
+				D5ABCBCA2B9859488D006BC1 /* [CP] Check Pods Manifest.lock */,
+				DBB64086275DF7DF00442F68 /* Sources */,
+				DBB64087275DF7DF00442F68 /* Frameworks */,
+				DBB64088275DF7DF00442F68 /* Resources */,
+				38A9523283774666B3F94A23 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArsenalExample;
+			productName = ArsenalExample;
+			productReference = DBB6408A275DF7DF00442F68 /* ArsenalExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBB640A4275DF7E100442F68 /* ArsenalExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB640BC275DF7E100442F68 /* Build configuration list for PBXNativeTarget "ArsenalExampleTests" */;
+			buildPhases = (
+				DBB640A1275DF7E100442F68 /* Sources */,
+				DBB640A2275DF7E100442F68 /* Frameworks */,
+				DBB640A3275DF7E100442F68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB640A7275DF7E100442F68 /* PBXTargetDependency */,
+			);
+			name = ArsenalExampleTests;
+			productName = ArsenalExampleTests;
+			productReference = DBB640A5275DF7E100442F68 /* ArsenalExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBB640AE275DF7E100442F68 /* ArsenalExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB640BF275DF7E100442F68 /* Build configuration list for PBXNativeTarget "ArsenalExampleUITests" */;
+			buildPhases = (
+				DBB640AB275DF7E100442F68 /* Sources */,
+				DBB640AC275DF7E100442F68 /* Frameworks */,
+				DBB640AD275DF7E100442F68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB640B1275DF7E100442F68 /* PBXTargetDependency */,
+			);
+			name = ArsenalExampleUITests;
+			productName = ArsenalExampleUITests;
+			productReference = DBB640AF275DF7E100442F68 /* ArsenalExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBB64082275DF7DF00442F68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					DBB64089275DF7DF00442F68 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					DBB640A4275DF7E100442F68 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = DBB64089275DF7DF00442F68;
+					};
+					DBB640AE275DF7E100442F68 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = DBB64089275DF7DF00442F68;
+					};
+				};
+			};
+			buildConfigurationList = DBB64085275DF7DF00442F68 /* Build configuration list for PBXProject "ArsenalExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBB64081275DF7DF00442F68;
+			productRefGroup = DBB6408B275DF7DF00442F68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBB64089275DF7DF00442F68 /* ArsenalExample */,
+				DBB640A4275DF7E100442F68 /* ArsenalExampleTests */,
+				DBB640AE275DF7E100442F68 /* ArsenalExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBB64088275DF7DF00442F68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB6409D275DF7E000442F68 /* LaunchScreen.storyboard in Resources */,
+				DBB6409A275DF7E000442F68 /* Assets.xcassets in Resources */,
+				DBB64098275DF7DF00442F68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB640A3275DF7E100442F68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB640AD275DF7E100442F68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38A9523283774666B3F94A23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArsenalExample/Pods-ArsenalExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArsenalExample/Pods-ArsenalExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArsenalExample/Pods-ArsenalExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5ABCBCA2B9859488D006BC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArsenalExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBB64086275DF7DF00442F68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB640CF275F2E0C00442F68 /* WeaponsPackage.m in Sources */,
+				DBB64095275DF7DF00442F68 /* ViewController.m in Sources */,
+				DBB640C6275F2B0C00442F68 /* Rifle.m in Sources */,
+				DBB6408F275DF7DF00442F68 /* AppDelegate.m in Sources */,
+				DBB640C9275F2C6600442F68 /* SMG.m in Sources */,
+				DBB640A0275DF7E000442F68 /* main.m in Sources */,
+				DBB64092275DF7DF00442F68 /* SceneDelegate.m in Sources */,
+				DBB640CC275F2D3600442F68 /* DynamicDamageWeapon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB640A1275DF7E100442F68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB640AA275DF7E100442F68 /* ArsenalExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB640AB275DF7E100442F68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB640B6275DF7E100442F68 /* ArsenalExampleUITestsLaunchTests.m in Sources */,
+				DBB640B4275DF7E100442F68 /* ArsenalExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBB640A7275DF7E100442F68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB64089275DF7DF00442F68 /* ArsenalExample */;
+			targetProxy = DBB640A6275DF7E100442F68 /* PBXContainerItemProxy */;
+		};
+		DBB640B1275DF7E100442F68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB64089275DF7DF00442F68 /* ArsenalExample */;
+			targetProxy = DBB640B0275DF7E100442F68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBB64096275DF7DF00442F68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB64097275DF7DF00442F68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBB6409B275DF7E000442F68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB6409C275DF7E000442F68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBB640B7275DF7E100442F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBB640B8275DF7E100442F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBB640BA275DF7E100442F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846215581E3CE97E8ADB6E89 /* Pods-ArsenalExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArsenalExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.ArsenalExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBB640BB275DF7E100442F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FCBC6A3504E2919DBF930C8 /* Pods-ArsenalExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArsenalExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.ArsenalExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBB640BD275DF7E100442F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.ArsenalExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArsenalExample.app/ArsenalExample";
+			};
+			name = Debug;
+		};
+		DBB640BE275DF7E100442F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.ArsenalExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArsenalExample.app/ArsenalExample";
+			};
+			name = Release;
+		};
+		DBB640C0275DF7E100442F68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.ArsenalExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArsenalExample;
+			};
+			name = Debug;
+		};
+		DBB640C1275DF7E100442F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.ArsenalExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArsenalExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBB64085275DF7DF00442F68 /* Build configuration list for PBXProject "ArsenalExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB640B7275DF7E100442F68 /* Debug */,
+				DBB640B8275DF7E100442F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB640B9275DF7E100442F68 /* Build configuration list for PBXNativeTarget "ArsenalExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB640BA275DF7E100442F68 /* Debug */,
+				DBB640BB275DF7E100442F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB640BC275DF7E100442F68 /* Build configuration list for PBXNativeTarget "ArsenalExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB640BD275DF7E100442F68 /* Debug */,
+				DBB640BE275DF7E100442F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB640BF275DF7E100442F68 /* Build configuration list for PBXNativeTarget "ArsenalExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB640C0275DF7E100442F68 /* Debug */,
+				DBB640C1275DF7E100442F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBB64082275DF7DF00442F68 /* Project object */;
+}
