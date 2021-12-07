@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "Arsenal"
+  spec.name         = "Arsenal-OBJC"
   spec.version      = "1.0.0"
   spec.summary      = "Code decoupling solutions for Objective-C"
 
