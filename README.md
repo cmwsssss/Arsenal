@@ -1,47 +1,48 @@
-# Arsenal
+中文版本请[点击这里](https://github.com/cmwsssss/Arsenal/blob/main/README-CN.md)
 
-## 什么是Arsenal？
-Arsenal 是一个插件式开发设计模式，该设计模式用于消除多层继承带来的高耦合性。
+## Arsenal
+Arsenal is a plug-in development design pattern that is used to eliminate the high coupling caused by multiple layers of inheritance.
 
-## 简介
-该模式由两个角色构成：一个是soldier（插件插入对象），一个是weapon（插件）。在理想状态下，一个soldier可以任意的选用任意的weapon来完成工作，weapon和weapon之间可以互相组装，生成新的weapon。
+## Introduction
+The pattern consists of two roles: a soldier (plug-in insertion object) and a weapon (plug-in). Ideally, a soldier can arbitrarily choose any weapon to do its job, weapon and weapon can be assembled with each other to generate new weapon.
 
 ## Soldier:
-任意OC对象都可以成为Soldier
+Any OBJC object can be a Soldier
 
 ## Weapon:
-Weapon是一个协议和类的复合体，协议部分声明了可以被Soldier使用的方法，类的部分则对协议的方法进行了实现
+Weapon is a composite of a protocol and a class. The protocol part declares the methods that can be used by Soldier, and the class part implements the methods of the protocol
 
-**简单来说Weapon是一个实现了的协议**
+**Weapon is an implemented protocol**
 
-## 架构对比
+## Architecture comparison
 
-### 传统的继承形式的架构
+### Traditional architecture in the form of inheritance
 
 <img width="652" alt="截屏2021-12-03 下午3 25 23" src="https://user-images.githubusercontent.com/16182417/144562262-25435464-e166-4b73-a8fe-b0585ea91e0d.png">
 
-这是一个依靠继承实现的多层架构，可以看到，一个装备完善的Soldier需要很多层级才能实现，一个层级的变动，会导致多个层级产生变化，而且在Rifle，Pistol，SMG这一级，很有可能出现过多的代码冗余，如果在Rifle，Pistol，SMG这一级再进行派生，生成新的类，那么下一级类之间的管理调用由于耦合关系过高，会更加的复杂
+This is a multi-layer architecture that relies on inheritance. As you can see, a well-equipped Soldier needs many layers to be implemented, and a change in one layer will lead to changes in multiple layers, and at the Rifle, Pistol, SMG level, there is a high probability of too much code redundancy, and if derivation is done again at the Rifle, Pistol, SMG level to generate new classes, then the management calls between the next level classes will be more complicated due to the high coupling
 
-### 依靠Arsenal实现的架构
+### Architecture that relies on Arsenal implementation
 
 <img width="652" alt="截屏2021-12-03 下午3 27 34" src="https://user-images.githubusercontent.com/16182417/144562428-1cfd2aa9-78bf-452d-b584-ad696e125f9f.png">
 
-这是一个依靠Arsenal实现的架构，由图可见，各个Weapon之间没有相互的耦合关系，与Soldier之间也没有过多的耦合关系，代码重用性也大大提高，Soldier可以立刻替换成任意OC对象。Weapon的数量也可以任意的增加或减少
+This is an architecture that relies on Arsenal, and as you can see from the diagram, there is no coupling between Weapon and Soldier, and no excessive coupling between Soldier and Soldier, so code reusability is greatly improved, and Soldier can be immediately replaced with any OBJC object.
 
-### 与Swift的extension的差异
-Swift原生就可以通过extension来实现该解耦方案，但是差异在于:
-1. Arsenal的粒度可以达到对象级别，而swift则是类级别，而且Arsenal的操控更加自由，可以在任何时候对任何对象进行weapon的装载和卸除
-2. Arsenal支持property，而extension没办法支持property
+### Differences with Swift's extensions
+Swift can natively implement the decoupling scheme through extensions, but the differences are:
+1. the granularity of Arsenal is at the object level, while swift is at the class level, and the control of Arsenal is much freer, as weapon can be loaded and unloaded at any time for any object
+2. Arsenal supports properties, while extension does not support properties
 
-### 环境要求
-Arsenal支持 iOS 6 以上
+## Getting Started
 
-### 安装方法
+### Prerequisites
+Apps using Arsenal can target: iOS 6 or later.
+
+### Installation
 pod 'Arsenal-OBJC'
 
-### 使用教程：
-#### 1.创建Weapon
-Weapon是一个协议和类的集合体，所以如果要创建一个Pistol的Weapon，可以这样做：
+### Creating a Weapon
+A Weapon is a composite of protocols and classes, so to create a Weapon of a Pistol, do this
 
 #### Pistol.h
 ```
@@ -68,25 +69,26 @@ Weapon是一个协议和类的集合体，所以如果要创建一个Pistol的We
 
 @end
 ```
-这样一把能进行Fire操作的Pistol类型就创建好了
+This creates a Pistol type that can perform Fire
 
-#### 2.将Weapon装载到Soldier
-##### 1.引入工具文件"NSObject+Weapon.h"
+### Install the weapon on the Soldier
+
+#### import "NSObject+Weapon.h"
 ```
 #import "NSObject+Weapon.h"
 ```
 
-##### 2.类级别的组装
-进行类级别的组装，则该类所有实例对象都能使用Weapon
+#### Install the weapon on class
+If you do class-level assembly, all instances of the class will be able to use Weapon
 
 ```
-//继承EquipPistol协议
+//Inherit EquipPistol protocol
 @interface Soldier () <EquipPistol>
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-        //将weapon安装到Soldier上
+        //Install the weapon on the Soldier
         self.soldier.cc_addWeapon([Pistol class])
     }
 }
@@ -94,20 +96,21 @@ Weapon是一个协议和类的集合体，所以如果要创建一个Pistol的We
 @end
 ```
 
-##### 3.对象级别的组装
-进行对象级别的组装，则只有该对象能使用Weapon
+#### 3.Install the weapon on object
+Install the weapon on a object only this object can use this weapon
 
 ```
 - (void)installWeapon {
-    //生成一个Soldier，该对象继承自EquipPistol协议，方便编译器识别
+    //Generate a Soldier object that inherits from the EquipPistol protocol
     NSObject <EquipPistol> *soldier = [[NSObject alloc] init];
-    //将weapon安装到Soldier上
+    
+    //Install the weapon on the Soldier
     soldier.cc_addWeapon([Pistol class])
 }
 ```
-##### 3.调用
+### Call the weapons's method
 ```
-//该Soldier可以立即调用weapon的方法
+//This Soldier can immediately call the weapon's method
 [soldier fire];
 ```
 
